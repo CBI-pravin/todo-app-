@@ -1,0 +1,28 @@
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" >Todo app</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="{% url 'all_task'  %}">all task </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'add_task'  %}">add task</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'delete_task'  %}">delete task </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'mark_task'  %}">pending task </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="{% url 'complete_task'  %}">completed task </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>

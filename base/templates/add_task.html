@@ -1,0 +1,18 @@
+{% extends 'main.html' %}
+
+
+{% block content %}
+<div class="container col-sm-8 mt-3 bg-info p-3">
+    <form action="{% url 'add_task' %}" method="post">
+        {% csrf_token %}
+<div class="mb-3">
+    <label for="exampleFormControlTextarea1" class="form-label">Add your task here</label>
+    <textarea required name ='task' class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="task here....."></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Button</button>
+</form>
+</div>
+
+
+{% endblock %}
